@@ -1,0 +1,28 @@
+.two {
+	background: -moz-linear-gradient(left,  #e69e95 0%, #e0686f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e69e95), color-stop(100%,#e0686f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* IE10+ */
+	background: linear-gradient(to right,  #e69e95 0%,#e0686f 100%); /* W3C */
+	
+	.fp-tableCell {
+		padding: 0 7%;
+
+		.bg-section {
+			background: url(#{$path}/sectionTwo/bg_parallax.png) no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	.row-left {
+		width: 49.2rem;
+		height: 48.3rem;
+		background: url(#{$path}/sectionTwo/iPad.png) no-repeat center top;
+	}
+
+	.row-right {
+		width: 39.0rem;
+	}
+}
+

@@ -1,0 +1,9 @@
+.six {
+	background: #f9919a; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f9919a 0%, #f55b68 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f9919a), color-stop(100%,#f55b68)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f9919a 0%,#f55b68 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f9919a 0%,#f55b68 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f9919a 0%,#f55b68 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f9919a 0%,#f55b68 100%); /* W3C */
+}
