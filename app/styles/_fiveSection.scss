@@ -7,20 +7,111 @@
 	background: -ms-linear-gradient(left,  #cdebdc 0%,#7dc4b2 100%); /* IE10+ */
 	background: linear-gradient(to right,  #cdebdc 0%,#7dc4b2 100%); /* W3C */
 
+	.cloud-section-four {
+		position: absolute;
+		background: url(#{$path}sectionFive/sprite_cloud.png) no-repeat;
+		z-index: 1;
+
+		&#first-four {
+			width: 17.4rem;
+			height: 4.6rem;
+			background-position: 0 0;
+			top: 30%;
+			left: 15%;
+			animation: cloudOneSectionFour 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#two-four {
+			width: 15.6rem;
+			height: 6rem;
+			background-position: 0 -56px;
+			top: 18%;
+			right: 18%;
+			animation: cloudTwoSectionFour 5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#three-four {
+			width: 7.3rem;
+			height: 2.8rem;
+			background-position: 0 -130px;
+			top: 80%;
+			right: 30%;
+			animation: cloudThreeSectionFour 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+	}
+
 	.fp-tableCell {
-		padding: 0 7%;
+		padding: 0 2%;
 
 		.bg-section {
-			background: url(#{$path}/sectionFive/bg_parallax.png) no-repeat;
-			background-size: 100% 100%;
+			background: url(#{$path}/sectionFive/bg_parallax.png) no-repeat center center;
 		}
 	}
 
 	.row-left {
-
+		width: 65.5rem;
+		height: 40rem;
+		background: url(#{$path}/sectionFive/desktop.png) no-repeat;
 	}
 
 	.row-right {
+		margin-top: -5rem;
 
+		.section-title {
+			span:first-child {
+				font-size: 3.5rem;
+			} 
+
+			span:first-child + span {
+				margin-top: -3.2rem;
+  				display: block;
+			}
+
+			span:last-child {
+				margin-top: -2rem;
+				display: block;
+			}
+		}
+
+		.section-text {
+			color: #28725d;
+			margin-top: 2rem;
+		}
+
+		.section-button-onde {
+			&#pupil {
+				margin-left: 7rem;
+				.main-picto {
+					background-position: 0 -75px;
+				}
+			}
+
+			&#team .main-picto {
+				background-position: -74px -75px;
+			}
+
+			margin-right: 1.5rem;
+		}
 	}
 }
+
+/* ANIM */
+
+@keyframes cloudOneSectionFour {
+  	0%   { transform: translateX(50px); }
+  	50% { transform: translateX(-50px); }
+  	100% { transform: translateX(50px); }
+}
+
+@keyframes cloudTwoSectionFour {
+	0%   { transform: translateX(-30px); }
+  	50% { transform: translateX(30px); }
+  	100% { transform: translateX(-30px); }
+}
+
+@keyframes cloudThreeSectionFour {
+	0%   { transform: translateX(-60px); }
+  	50% { transform: translateX(60px); }
+  	100% { transform: translateX(-60px); }
+}
+

@@ -9,18 +9,150 @@
 
 	.fp-tableCell {
 		padding: 0 7%;
+	}
 
-		// .bg-section {
-		// 	background: url(#{$path}/sectionThird/bg_parallax.png) no-repeat;
-		// 	background-size: cover;
-		// }
+	.cloud-section-two {
+		position: absolute;
+		background: url(#{$path}/sectionThird/sprite_cloud.png) no-repeat;
+		z-index: 1;
+
+		&#first-two {
+			width: 12.1rem;
+			height: 4.7rem;
+			background-position: 0 0;
+			top: 15%;
+			left: 10%;
+			animation: cloudOneSectionTwo 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#two-two {
+			width: 13.2rem;
+			height: 3.9em;
+			background-position: 0 -52px;
+			top: 20%;
+			right: 30%;
+			animation: cloudTwoSectionTwo 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#three-two {
+			width: 11.6rem;
+			height: 3.2rem;
+			background-position: 0 -102px;
+			bottom: 10%;
+			left: 15%;
+			animation: cloudThreeSectionTwo 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#four-two {
+			width: 6.7rem;
+			height: 2.7rem;
+			background-position: 0 -143px;
+			bottom: 30%;
+			right: 40%;
+			animation: cloudFourSectionTwo 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
 	}
 
 	.row-left {
-		margin-top: 12rem;
-		width: 62.6rem;
-		height: 32.3rem;
-		background: url(#{$path}/sectionThird/iPad.png) no-repeat center top;
+		position: relative;
+
+		span {
+			position: absolute;
+			border-radius: 100%;
+		}
+
+		#big-circle {
+  			width: 45.5rem;
+  			height: 45.5rem;
+  			border: 1px solid #c5c8df;
+  			top: -6.5rem;
+  			left: 9rem;
+  			animation: circleBig 3s 0.5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		#little-circle {
+		  	height: 43.5rem;
+		  	width: 43.5rem;
+		  	border: 5px solid #c5c8df;
+		  	top: -5.5rem;
+		  	left: 10rem;
+		  	animation: circle 3s 0.5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		#ipad-section2 {
+			position: relative;
+			z-index: 999;
+			width: 62.6rem;
+			height: 32.3rem;
+			background: url(#{$path}/sectionThird/iPad.png) no-repeat center top;			
+		}
 	}
+
+	.row-right {
+		margin-top: -5rem;
+
+		.section-title {
+			span:first-child {
+				font-size: 3.5rem;
+			} 
+
+			span:first-child + span {
+				margin-top: -3.2rem;
+  				display: block;
+			}
+
+			span:last-child {
+				margin-top: -2rem;
+				display: block;
+				padding-left: 3rem;
+			}
+		}
+
+		.section-text {
+			color: #5d5280;
+			margin-top: 2rem;
+		}
+	}
+}
+
+
+/* ANIM CIRCLE */
+
+@keyframes circle {
+	0% { transform: scale(1.05); }
+	50% { transform: scale(1); }
+	100% { transform: scale(1.05); }
+}
+
+@keyframes circleBig {
+	0% { transform: scale(1.1); }
+	50% { transform: scale(1); }
+	100% { transform: scale(1.1); }
+}
+
+/* ANIM CLOUDS */
+
+@keyframes cloudOneSectionTwo {
+  	0%   { transform: translateX(70px); }
+  	50% { transform: translateX(-70px); }
+  	100% { transform: translateX(70px); }
+}
+
+@keyframes cloudTwoSectionTwo {
+	0%   { transform: translateX(-100px); }
+  	50% { transform: translateX(100px); }
+  	100% { transform: translateX(-100px); }
+}
+
+@keyframes cloudThreeSectionTwo {
+	0%   { transform: translateX(-70px); }
+  	50% { transform: translateX(70px); }
+  	100% { transform: translateX(-70px); }	
+}
+
+@keyframes cloudFourSectionTwo {
+  	0%   { transform: translateX(30px); }
+  	50% { transform: translateX(-30px); }
+  	100% { transform: translateX(30px); }	
 }
 

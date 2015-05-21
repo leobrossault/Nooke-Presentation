@@ -5,13 +5,54 @@
 	background: -o-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* IE10+ */
 	background: linear-gradient(to right,  #e69e95 0%,#e0686f 100%); /* W3C */
+
+	.cloud-section-one {
+		position: absolute;
+		background: url(#{$path}/sectionTwo/sprite_cloud.png) no-repeat;
+		z-index: 1;
+
+		&#first-one {
+			width: 37.4rem;
+			height: 7.9rem;
+			background-position: 0 0;
+			top: 20%;
+			left: 1%;
+			animation: cloudOneSectionOne 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#two-one {
+			width: 21.4rem;
+			height: 8.2rem;
+			background-position: 0 -105px;
+			top: 10%;
+			right: 10%;
+			animation: cloudTwoSectionOne 5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#three-one {
+			width: 14rem;
+			height: 2.4rem;
+			background-position: 0 -198px;
+			top: 60%;
+			right: 15%;
+			animation: cloudThreeSectionOne 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		&#four-one {
+			width: 14rem;
+			height: 2.4rem;
+			background-position: 0 -237px;
+			left: 0;
+			top: 70%;
+			animation: cloudFourSectionOne 4s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+	}
 	
 	.fp-tableCell {
 		padding: 0 7%;
 
 		.bg-section {
-			background: url(#{$path}/sectionTwo/bg_parallax.png) no-repeat;
-			background-size: 100% 100%;
+			background: url(#{$path}/sectionTwo/bg_parallax.png) no-repeat center center;
 		}
 	}
 
@@ -23,6 +64,72 @@
 
 	.row-right {
 		width: 39.0rem;
+
+		.section-title {
+			span:first-child + span {
+				position: relative;
+				left: 2rem;
+			}
+
+			span:last-child {
+				position: relative;
+  				top: -1.2rem;
+			}
+		}
+
+		.section-text {
+			color: #8a333b;
+		}
+
+		.section-button-onde {
+			&#note .main-picto {
+				background-position: 0 0;
+			}
+
+			&#ask .main-picto {
+				background-position: -74px 0;
+			}
+
+			&#define .main-picto {
+				background-position: -147px 0;
+			}
+
+			&#note{
+				margin-left: 3.5rem;
+			}
+
+			margin-right: 1.5rem;
+		}
 	}
 }
+
+/* ANIM */
+
+@keyframes cloudOneSectionOne {
+  	0%   { transform: translateX(70px); }
+  	50% { transform: translateX(-70px); }
+  	100% { transform: translateX(70px); }
+}
+
+@keyframes cloudTwoSectionOne {
+	0%   { transform: translateX(-105px); }
+  	50% { transform: translateX(105px); }
+  	100% { transform: translateX(-105px); }
+}
+
+@keyframes cloudThreeSectionOne {
+	0%   { transform: translateX(-50px); }
+  	50% { transform: translateX(50px); }
+  	100% { transform: translateX(-50px); }
+}
+
+@keyframes cloudFourSectionOne {
+	0%   { transform: translateX(20px); }
+  	50% { transform: translateX(-20px); }
+  	100% { transform: translateX(20px); }
+}
+
+
+
+
 

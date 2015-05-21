@@ -9,6 +9,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/fullpage/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -18,7 +19,7 @@
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
-    <script src="//use.typekit.net/xfn1cks.js"></script>
+    <script src="//use.typekit.net/pyi1cyg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <!-- endbuild -->
   </head>
@@ -36,40 +37,64 @@
 
     <div id="fullpage">
       <div class="section one">
+        <div class="container">
+          <div id="logo-section">
+            <img src="/images/sectionOne/logo.jpg" alt="Nooke" />
+            <p>NOOKE</p>
+          </div> 
 
+          <p id="baseline">L’outil des enseignants <br/>l’application des enfants</p> 
+          <a href="#">Découvrir la vidéo</a>   
+        </div>
+        <a href="#" id="more">En savoir plus</a>
+        <div> 
+          <div id="arrow">
+            <span class="arrow-bot"></span>
+            <span class="arrow-bot"></span>
+          </div>
+        </div> 
       </div>
 
 <!-- ***************** SECTION 2 ***************** -->
       <div class="section two">
         <span class="bg-section"></span>
+        <!--- CLOUDS -->
+        <span class="cloud-section-one" id="first-one"></span>
+        <span class="cloud-section-one" id="two-one"></span>
+        <span class="cloud-section-one" id="three-one"></span>
+        <span class="cloud-section-one" id="four-one"></span>
+            
+          <!-- CONTAIN -->
         <div class="container">
-          <div class="row-left left">
-            <!-- VIDEO -->
-          </div>
-
-          <div class="row-right right">
-            <p class="section-title"><span>UNE</span><span>lecture</span><br/><span>Interactice</span></p>
-
-            <p class="section-text">
-              Grace aux différents outils d’aide <br/>à la lecture, comme le dictionnaire, <br/>chaque élève peut progresser dans l’histoire à <br/>son rythme et sans difficultés.
-            </p>
-
-            <div class="section-button-onde">
-              <span class="back-onde"></span>
-              <span class="main-picto"></span>
-              <p>noter</p>
+          <div class="container-x">
+            <div class="row-left left">
+              <!-- VIDEO -->
             </div>
 
-            <div class="section-button-onde">
-              <span class="back-onde"></span>
-              <span class="main-picto"></span>
-              <p>demander</p>
-            </div>
+            <div class="row-right right">
+              <p class="section-title"><span>UNE</span><span>lecture</span><br/><span>Interactive</span></p>
 
-            <div class="section-button-onde">
-              <span class="back-onde"></span>
-              <span class="main-picto"></span>
-              <p>définir</p>
+              <p class="section-text">
+                Grace aux différents outils d’aide <br/>à la lecture, comme le dictionnaire, <br/>chaque élève peut progresser dans <br/>l’histoire à son rythme et sans difficultés.
+              </p>
+
+              <div class="section-button-onde" id="note">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>noter</p>
+              </div>
+
+              <div class="section-button-onde" id="ask">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>demander</p>
+              </div>
+
+              <div class="section-button-onde" id="define">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>définir</p>
+              </div>
             </div>
           </div>
         </div>
@@ -77,19 +102,30 @@
 
 <!-- ***************** SECTION 3 ***************** -->
        <div class="section third">
+        <!--- CLOUDS -->
+        <span class="cloud-section-two" id="first-two"></span>
+        <span class="cloud-section-two" id="two-two"></span>
+        <span class="cloud-section-two" id="three-two"></span>
+        <span class="cloud-section-two" id="four-two"></span>
+            
+        <!-- CONTAIN -->
         <div class="container">
-          <div class="row-left left">
-            <!-- VIDEO -->
-            <span id="big-circle"></span>
-            <span id="little-circle"></span>
-          </div>
+          <div class="container-x">
+            <div class="row-left left">             
+              <span id="big-circle"></span>
+              <span id="little-circle"></span>
+              <div id="ipad-section2">
+                 <!-- VIDEO -->
+              </div>
+            </div>
 
-          <div class="row-right right">
-            <p class="section-title"><span>DES</span><span>activités</span><br/><span>Ludiques</span></p>
+            <div class="row-right right">
+              <p class="section-title"><span>DES<br/></span><span>activités</span><br/><span>Ludiques</span></p>
 
-            <p class="section-text">
-              Pour rendre la lecture plus immersive,l’élève<br/> doit résoudre une énigme afin de valider sa <br/>bonne compréhension du texte et ainsi débloquer la suite de l’histoire. 
-            </p>
+              <p class="section-text">
+                Pour rendre la lecture plus immersive,l’élève<br/> doit résoudre une énigme afin de valider sa <br/>bonne compréhension du texte et ainsi débloquer<br/> la suite de l’histoire. 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -97,13 +133,34 @@
 <!-- ***************** SECTION 4 ***************** -->
       <div class="section four">
         <span class="bg-section"></span>
+        <!--- CLOUDS -->
+        <span class="cloud-section-three" id="first-three"></span>
+        <span class="cloud-section-three" id="two-three"></span>
+        <span class="cloud-section-three" id="three-three"></span>
+        <span class="cloud-section-three" id="four-three"></span>
+        
+        <!-- CONTAIN -->
         <div class="container">
-          <div class="row-left left">
+          <div class="container-x">
+            <div class="row-left left">
+              <span class="connection"></span>
+              <span class="connection"></span>
+              <span class="connection"></span>
+            </div>
 
-          </div>
+            <div class="row-right right">
+              <p class="section-title"><span>UNE<br/></span><span>entraide</span><br/><span>à distance</span></p>
 
-          <div class="row-right right">
+              <p class="section-text">
+                Chaque élève appartient à une équipe lecture, formée <br/>préalablement par l’enseignant.<br/> L’enfant n’est pas seul dans sa lecture, il peut discuter<br/> avec ses co-équipiers ou bien demander <br/>une explication sur un passage qu’il n’a pas compris.
+              </p>
 
+              <div class="section-button-onde" id="send">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>envoyer un message</p>
+              </div>
+            </div>
           </div>
         </div>    
       </div>
@@ -112,13 +169,37 @@
 <!-- ***************** SECTION 5 ***************** -->
       <div class="section five">
         <span class="bg-section"></span>
+        <!--- CLOUDS -->
+        <span class="cloud-section-four" id="first-four"></span>
+        <span class="cloud-section-four" id="two-four"></span>
+        <span class="cloud-section-four" id="three-four"></span>
+
+        <!-- CONTAIN -->
         <div class="container">
-          <div class="row-left left">
+          <div class="container-x">
+            <div class="row-left left">
+              <!-- VIDEO -->
+            </div>
 
-          </div>
+            <div class="row-right right">
+              <p class="section-title"><span>UN<br/></span><span>suivi</span><br/><span>personnalisé</span></p>
 
-          <div class="row-right right">
+              <p class="section-text">
+                Grâce à la synchronisation des ipad avec votre <br/>dashboard, vous pouvez suivre à distance le<br/> progrès de tous vos élèves.
+              </p>
 
+              <div class="section-button-onde" id="pupil">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>élève</p>
+              </div>
+
+              <div class="section-button-onde" id="team">
+                <span class="back-onde"></span>
+                <span class="main-picto"></span>
+                <p>équipe</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,13 +207,40 @@
 
 <!-- ***************** SECTION 6 ***************** -->
       <div class="section six">
+        <!--- CLOUDS -->
+        <span class="cloud-section-five" id="first-five"></span>
+        <span class="cloud-section-five" id="two-five"></span>
+        <span class="cloud-section-five" id="three-five"></span>
+        <span class="cloud-section-five" id="four-five"></span>
+        <span class="cloud-section-five" id="five-five"></span>
+        <span class="cloud-section-five" id="six-five"></span>
+
+        <!-- CONTAIN -->
         <div class="container">
-          <div class="row-left left">
+          <div class="container-x">
+            <div class="row-left left">
+              <!-- VIDEO -->
+            </div>
 
-          </div>
+            <div class="row-right right">
+                <p class="section-title"><span>UNE<br/></span><span>ressource</span><br/><span>pédagogique</span></p>
 
-          <div class="row-right right">
+                <p class="section-text">
+                  Enfin, Nooke est pour vous une véritable<br/> bibliothèque d’exercices et de livres<br/> numériques.
+                </p>
+                
+                <div class="section-button-onde" id="french">
+                  <span class="back-onde"></span>
+                  <span class="main-picto"></span>
+                  <p>fiche de français</p>
+                </div>
 
+                <div class="section-button-onde" id="book">
+                  <span class="back-onde"></span>
+                  <span class="main-picto"></span>
+                  <p>livres</p>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,21 +248,50 @@
 
 <!-- ***************** SECTION 7 ***************** -->
       <div class="section seven">
+        <span id="bg-top" class="bg"></span>
+        <span id="bg-bottom" class="bg"></span>
+
         <div class="container">
-          <div class="row-left left">
+          <div class="container-x">
+            <h3>Démo</h3>
+            <img src="/images/sectionSeven/fake.jpg" alt="fake" />
+            
+            <div id="btns-demos">
+              <div class="btn-demo" id="desktop-demo">
+                <span class="onde-demo"></span>
+                <span class="picto-demo"></span>
+              </div>
 
-          </div>
-
-          <div class="row-right right">
-
+              <div class="btn-demo" id="iPad-demo">
+                <span class="onde-demo"></span>
+                <span class="picto-demo"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
 
 <!-- ***************** SECTION 8 ***************** -->
-       <div class="section eight">
+      <div class="section eight">
+        <div class="container">
+          <div class="container-x">
+            <div class="row-left">
+              <img src="/images/sectionEight/outil.png" alt="Outil" />
+              <h4>Des enseignants</h4>
+              <h5>l'app</h5>
+              <h4>Des enfants</h4>
+              
+              <label for="mail">Restez informez de l’avancer du projet !</label>
+              <input type="text" name="mail" />
+              <input type="submit" value="Ok" />
+            </div>
 
+            <div class="row-right">
+
+            </div>
+          </div>
+        </div>        
       </div>
     
 
@@ -166,10 +303,11 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/fullpage/jquery.fullPage.min.js"></script>
-    <script src="../bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="../bower_components/fullpage/jquery.fullPage.js"></script>
+    <script src="../bower_components/fullpage/vendors/jquery.easings.min.js"></script>
+    <script src="../bower_components/fullpage/vendors/jquery.slimscroll.min.js"></script>
+    <script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
