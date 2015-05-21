@@ -115,3 +115,18 @@
   	100% { transform: translateX(-60px); }
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1270px) {
+	.five {
+		.row-left {
+			display: none;
+		}
+
+		.row-right {
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+

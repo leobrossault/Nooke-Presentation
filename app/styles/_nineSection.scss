@@ -1,0 +1,106 @@
+.nine {
+
+	h3 {
+		padding-left: 7.5rem;
+		font-size: 3rem;
+		font-family: $font3;
+		color: #f55c69;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 1rem;
+			width: 5.9rem;
+			height: 1.6rem;
+			background-position: 0 -226px;
+		}
+	}
+
+	h4 {
+		font-weight: 700;
+		color: #3b3f45;
+		font-size: 2rem;
+		font-family: $font2;
+		border-bottom: 3px solid #f26973;
+		line-height: 4rem;
+		margin: 0;
+		padding-left: 2.5rem;
+	}
+
+	h4 + p {
+		margin: 0;
+		font-size: 1.5rem;
+		color: #3b3f45;
+		font-weight: 100;
+		margin-top: 0.7rem;
+	}
+
+	.row-left,
+	.row-right {
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		position: relative;
+		padding-bottom: 13rem;
+	}
+
+	.row-right {
+		margin-left: 4%;
+
+		a {
+			position: absolute;
+			left: 20%;
+			bottom: 0;
+			text-decoration: none;
+			color: #3b3f45;
+			font-size: 1.5rem;
+			font-family: $font2;
+			font-style: italic;
+			font-weight: 100;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.row-left {
+		a {
+			position: absolute;
+			right: 20%;
+			bottom: 0;
+		}
+	}
+
+	#contain-thanks {
+		position: relative;
+		z-index: 999;
+	}
+
+	#thanks {
+		font-size: 1.7rem;
+		color: #3b3f45;
+		font-weight: 300;
+		text-align: center;
+		line-height: 2.2rem;
+	}
+
+	#editis {
+		display: block;
+		margin: auto;
+		width: 20.5rem;
+		margin-top: 2.8rem;
+	}
+
+	#bg_bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: url(#{$path}/sectionNine/bg_bottom.jpg) no-repeat center bottom;
+		width: 100%;
+		height: 14.3rem;
+		z-index: 1;
+	}
+}

@@ -8,7 +8,7 @@
 	background: linear-gradient(to right,  #eeedf3 0%,#c5cfe3 100%); /* W3C */
 
 	.fp-tableCell {
-		padding: 0 7%;
+		padding: 0 2%;
 	}
 
 	.cloud-section-two {
@@ -156,3 +156,30 @@
   	100% { transform: translateX(30px); }	
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1270px) {
+	.third {
+		.fp-tableCell {
+			padding: 0;
+		}
+
+		.row-right {
+			width: 32%;
+		}
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.third {
+		.row-left {
+			display: none;
+		}
+
+		.row-right {
+			width: 80%;
+			margin: auto;
+			float: none;
+		}
+	}
+}

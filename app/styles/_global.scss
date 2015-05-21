@@ -24,7 +24,7 @@ html {
 body {
 	margin: 0;
 	font-family: $font;
-	min-width: 1270px;
+	// min-width: 1270px;
 
 	ul {
 		padding: 0;
@@ -210,7 +210,8 @@ section {
 .arrow-bot,
 .main-picto,
 .connection,
-.picto-demo {
+.picto-demo,
+h3::before {
 	background: url(#{$path}sprite_pictos.png) no-repeat;
 }
 
@@ -227,5 +228,7 @@ section {
 		max-width: 60%;
 	}
 }
+
+
 
 

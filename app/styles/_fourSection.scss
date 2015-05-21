@@ -76,7 +76,7 @@
 				width: 3.5rem;
 				height: 15.4em;
 				top: 19rem;
-  				left: 28.5rem;
+  				right: 48.5rem;
   				animation: connection 3s 1s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
 			}
 
@@ -85,7 +85,7 @@
 				width: 2.4rem;
 				height: 10rem;
 				top: 21.5rem;
-  				left: 31.8rem;
+  				right: 45.8rem;
   				animation: connection 3s 0.5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
 			}
 
@@ -94,7 +94,7 @@
 				width: 1.5em;
 				height: 5.6em;
 				top: 23.6rem;
-  				left: 34.8rem;
+  				right: 43.8rem;
   				animation: connection 3s 0s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
 			}
 		}	
@@ -193,4 +193,43 @@
 		max-width: 70%;
 	}
 }
+
+@media screen and (max-width: 1270px) {
+	.four {
+		.row-right {
+			width: 32%;
+			.section-title {
+				position: relative;
+				left: -4.8rem;
+			}
+
+			.section-button-onde {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.four {
+		.row-left {
+			display: none;
+		}
+
+		.container-x {
+			width: 80%;
+			margin: auto;
+			float: none !important;
+			.row-right {
+				width: 100%;
+
+				.section-title,
+				.section-text {
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
 

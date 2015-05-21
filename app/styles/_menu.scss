@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	z-index: 99999;
-	height: 5.9em;
+	height: 3.9em;
 	padding: 0 5% 0 15%;
 	background: -moz-linear-gradient(left,  #e69e95 0%, #e0686f 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e69e95), color-stop(100%,#e0686f)); /* Chrome,Safari4+ */
@@ -12,14 +12,22 @@
 	background: -o-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* IE10+ */
 	background: linear-gradient(to right,  #e69e95 0%,#e0686f 100%); /* W3C */
+	
+	@include transition(.4s);
+
+	#burger {
+		display: none;
+	}
 
 	#logo {
 		font-size: 3rem;
 		font-weight: 100;
 		text-decoration: none;
 		color: #fff;
-		margin-top: 1rem;
+		margin-top: 0.3rem;
 		letter-spacing: 0.3em;
+
+		@include transition(.3s);
 	}
 
 	& > ul {
@@ -33,7 +41,7 @@
 
 			a {
 				display: table;
-				height: 5.9rem;
+				height: 3.9rem;
 				text-align: center;
 				text-decoration: none;
 				color: #fff;
@@ -44,12 +52,8 @@
 				padding: 0 1rem;
 				@include transition(.3s);
 
-				&:hover {
-					font-weight: 700;
-
-					&::before {
-						transform: translateY(-0.7rem);
-					}
+				&:hover::before {
+					transform: translateY(-0.7rem);
 				}
 
 				&::before {
@@ -67,6 +71,95 @@
 					display: table-cell;
 					vertical-align: middle;
 				}
+			}
+		}
+	}
+}
+
+/*  BG MENU */
+.fp-viewing-0 #menu {
+	height: 5.9em;
+
+	#logo {
+		margin-top: 1rem;
+	}
+
+	& > ul li a {
+		height: 5.9rem;
+	}
+}
+
+/* begin from 0 */
+.fp-viewing-1 #menu,
+.fp-viewing-2 #menu,
+.fp-viewing-3 #menu,
+.fp-viewing-4 #menu,
+.fp-viewing-5 #menu,
+.fp-viewing-7 #menu {
+	background: #fff;
+
+	#logo {
+		color: #3b3f45;
+	}
+
+	& > ul li a {
+		color: #3b3f45;
+	}
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 680px) {
+	#menu {
+
+		#burger {
+			display: block;
+			height: 2.3rem;
+			width: 4.5rem;
+			border-bottom: 3px solid #fff;
+			border-top: 3px solid #fff;
+			position: absolute;
+		  	top: 1.5rem;
+		  	left: 2rem;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 0.7rem;
+				width: 100%;
+				height: 0.3rem;
+				background: #fff;
+			}
+		}
+
+		ul {
+			display: block;
+			position: fixed;
+			z-index: 99999999999;
+			width: 80%;
+			left: -80%;
+			top: 0;
+
+			@include transition(0.4s);
+
+			li {
+				display: block;
+				border-bottom: 1px solid #3b3f45;
+				background: #fff;
+
+				a {
+					color: #3b3f45;
+				}
+
+				&:last-child {
+					border: none;
+				}
+			}
+
+			&.active {
+				left: 0;
 			}
 		}
 	}

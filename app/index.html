@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width">
     <title>Nooke</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -25,6 +25,7 @@
   </head>
   <body>
     <div id="menu">
+      <span id="burger"></span>
       <a href="#" id="logo" class="left">NOOKE</a>
       <ul class="right">
         <li><a href="#"><span>Home</span></a></li>
@@ -276,18 +277,15 @@
       <div class="section eight">
         <div class="container">
           <div class="container-x">
-            <div class="row-left">
+            <div class="row-left left">
               <img src="/images/sectionEight/outil.png" alt="Outil" />
-              <h4>Des enseignants</h4>
-              <h5>l'app</h5>
-              <h4>Des enfants</h4>
               
               <label for="mail">Restez informez de l’avancer du projet !</label>
               <input type="text" name="mail" />
               <input type="submit" value="Ok" />
             </div>
 
-            <div class="row-right">
+            <div class="row-right right">
 
             </div>
           </div>
@@ -297,7 +295,32 @@
 
 <!-- ***************** SECTION 9 ***************** -->
       <div class="section nine">
+        <div class="container">
+          <div class="container-x">
+            <h3>L'équipe</h3>
+            <div class="row-left">
+              <h4>Clémence Taillez</h4>
+              <p>Conception, Direction artistique</p>
+              <a href="http://www.gobelins.fr/" target="_blank"><img src="/images/sectionNine/gobelins.png" alt="Gobelins" /></a>
+            </div>
 
+            <div class="row-right">
+              <h4>Léo Brossault</h4>
+              <p>Conception, Développement</p>
+              <a href="http://www.gobelins.fr/" target="_blank">
+                <p>Une école de</p>
+                <img src="/images/sectionNine/cci.jpg" alt="CCI de Paris" />
+              </a>
+            </div>
+            
+            <h3>Merci à</h3>
+            <div id="contain-thanks">
+              <p id="thanks">Thierry Audoux, Véronique Ficara, Catherine Nyeki, Thomas Menia, Julien Demezois, <br/>Clément Rucheton, Benoît Widemann et Jonathan Blanchet. <br/><br/>Ce projet a été réalisé en partenariat avec la société Editis </p>
+              <a id="editis" href="http://www.editis.com/" target="_blank"><img src="/images/sectionNine/editis.jpg" alt="Editis" /></a>
+            </div>
+            <span id="bg_bottom"></span>
+          </div>
+        </div>
       </div>
     </div>
 

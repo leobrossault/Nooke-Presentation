@@ -130,6 +130,30 @@
 }
 
 
+@media screen and (max-width: 1270px) {
+	.two {
+		.fp-tableCell {
+			padding: 0;
+		}
 
+		.row-right {
+			// width: 32%;
+		}
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.two {
+		.row-left {
+			display: none;
+		}
+
+		.row-right {
+			width: 80%;
+			margin: auto;
+			float: none;
+		}
+	}
+}
 
 
