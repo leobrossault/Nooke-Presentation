@@ -24,6 +24,11 @@ html {
 body {
 	margin: 0;
 	font-family: $font;
+	opacity: 0;
+
+	&.appear {
+		opacity: 1;
+	}
 	// min-width: 1270px;
 
 	ul {
@@ -133,7 +138,7 @@ section {
 				top: 9rem;
 				width: 100%;
 				z-index: 5;
-				@include transition(.5s);
+				@include transition(.8s);
 			}
 
 			&:hover {

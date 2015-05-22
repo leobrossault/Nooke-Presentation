@@ -92,8 +92,54 @@
 				animation: arrow 1.5s infinite;
 			}
 		}
-	}	
+	}
 }
+
+#overlay-teaser {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999999999;
+	opacity: 0;
+	background: rgba(66, 66, 66, 0.5);
+	pointer-events: none;
+	display: table;
+
+	@include transition(.4s);
+
+	&.active {
+		pointer-events: auto;
+		opacity: 1;
+	}
+		
+	& > div {
+		display: table-cell;
+		vertical-align: middle;
+
+		#overlay-click {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+  			left: 0;
+		}	
+
+		#popup-teaser {
+			width: 88rem;
+			background: #fff;
+			height: 50rem;
+			margin: auto;
+			padding: 1rem;
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}	
+	}
+}	
 
 @media screen and (max-width: 680px) {
 	.one .container #baseline {

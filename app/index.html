@@ -5,19 +5,23 @@
     <meta name="description" content="">
     <meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width">
     <title>Nooke</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript">
+      jQuery(function($){
+        $(document).ready(function(){
+          $("body").hide();
+          $("html").append('<div id="wait" style="position: fixed; left: 49%; top: 42%; margin-left: -32px; /* -1 * image width / 2 */ margin-top: -32px;  /* -1 * image height / 2 */display: block;  "><img src="/images/loading.gif"/></div>');
+        });
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
+        $(window).load(function(){
+          $("#wait").hide();
+          $("body").addClass("appear");
+          $("body").fadeIn(1000);
+        });
+      });
+    </script>
     <link rel="stylesheet" href="../bower_components/fullpage/jquery.fullPage.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="//use.typekit.net/pyi1cyg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -33,8 +37,17 @@
         <li><a href="#teaser"><span>Teaser</span></a></li>
         <li><a href="#concept"><span>Concept</span></a></li>
         <li><a href="#demo"><span>Démo</span></a></li>
-        <li><a href="#teamPage"><span>Équipe</span></a></li>
+        <li><a href="#teamPage"><span>Crédits</span></a></li>
       </ul>
+    </div>
+
+    <div id="overlay-teaser">
+      <div>
+        <span id="overlay-click"></span>
+        <div id="popup-teaser">
+          <iframe src="https://player.vimeo.com/video/128339029" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>    
     </div>
 
     <div id="fullpage">
@@ -327,7 +340,6 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/fullpage/jquery.fullPage.js"></script>
     <script src="../bower_components/fullpage/vendors/jquery.easings.min.js"></script>
     <script src="../bower_components/fullpage/vendors/jquery.slimscroll.min.js"></script>
