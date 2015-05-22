@@ -89,3 +89,16 @@
 		}
 	}
 }
+
+@media screen and (max-width: 680px) {
+	.eight {
+		.row-left {
+			input[type=text],
+			input[type=submit] {
+				display: block;
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}

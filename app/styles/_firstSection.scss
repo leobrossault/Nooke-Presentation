@@ -68,6 +68,8 @@
 		color: #8881a0;
 		text-transform: uppercase;
 		font-size: 2rem;
+		cursor: pointer;
+		z-index: 999;
 	}
 
 	#more + div {
@@ -93,3 +95,8 @@
 	}	
 }
 
+@media screen and (max-width: 680px) {
+	.one .container #baseline {
+		font-size: 2rem;
+	}
+}

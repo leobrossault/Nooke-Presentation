@@ -104,3 +104,25 @@
 		z-index: 1;
 	}
 }
+
+
+
+@media screen and (max-width: 680px) {
+	.nine .row-left,
+	.nine .row-right {
+		padding-bottom: 10rem;
+	}
+
+	.nine .row-right a {
+		left: 0;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.nine #thanks {
+		font-size: 1.1rem;
+	}
+}

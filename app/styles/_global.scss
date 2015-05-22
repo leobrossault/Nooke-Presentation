@@ -229,6 +229,24 @@ h3::before {
 	}
 }
 
+@media screen and (max-width: 680px) {
+	.fp-tableCell .container .section-title span:first-child {
+		font-size: 2rem;
+	}
+
+	.fp-tableCell .container .section-title span:first-child + span {
+		font-size: 6rem;
+	}
+
+	.fp-tableCell .container .section-title span:last-child {
+		font-size: 2.4rem;
+	}
+
+	.row-right,
+	.row-left {
+		float: none !important;
+	}
+}
 
 
 
