@@ -23,7 +23,7 @@ $(document).ready(function() {
             var rowLeftAnim = new TimelineMax();
             var rowRightAnim = new TimelineMax();
 
-            if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4) {
+            if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex == 5 || nextIndex == 6) {
                 video.get(0).play();
             }
 

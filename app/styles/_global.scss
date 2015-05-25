@@ -49,6 +49,15 @@ section {
 .right {float: right;}
 .hidden {display: none;}
 
+.video-contain {
+	overflow: hidden;
+	position: absolute;
+  	width: 45.8rem;
+  	top: 1rem;
+  	left: 10.2rem;
+  	height: 30.3rem;
+}
+
 .fp-tableCell {
 	position: relative;
 	display: table;
