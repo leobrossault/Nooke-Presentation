@@ -44,14 +44,14 @@
 		padding: 0 2%;
 
 		.bg-section {
-			background: url(#{$path}/sectionFive/bg_parallax.png) no-repeat center center;
+			background: url(#{$path}sectionFive/bg_parallax.png) no-repeat center center;
 		}
 	}
 
 	.row-left {
 		width: 65.5rem;
 		height: 40rem;
-		background: url(#{$path}/sectionFive/desktop.png) no-repeat;
+		background: url(#{$path}sectionFive/desktop.png) no-repeat;
 	}
 
 	.row-right {

@@ -7,6 +7,11 @@
 	background: -ms-linear-gradient(left,  #fec2af 0%,#f59b82 100%); /* IE10+ */
 	background: linear-gradient(to right,  #fec2af 0%,#f59b82 100%); /* W3C */
 	
+	video {
+		position: absolute;
+  		right: 10rem;
+  		top: 4.9rem;
+	}
 
 	.cloud-section-three {
 		position: absolute;
@@ -54,7 +59,7 @@
 		padding: 0;
 
 		.bg-section {
-			background: url(#{$path}/sectionFour/bg_parallax.png) no-repeat center center;
+			background: url(#{$path}sectionFour/bg_parallax.png) no-repeat center center;
 		}
 
 		.container-x {
@@ -63,7 +68,7 @@
 	}
 
 	.row-left {
-		background: url(#{$path}/sectionFour/iPad.png) no-repeat right top;
+		background: url(#{$path}sectionFour/iPad.png) no-repeat right top;
 		height: 48rem;
 		width: 66.7rem;
 		position: relative;

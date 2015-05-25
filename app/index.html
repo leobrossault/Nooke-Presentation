@@ -5,12 +5,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width">
     <title>Nooke</title>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript">
       jQuery(function($){
         $(document).ready(function(){
           $("body").hide();
-          $("html").append('<div id="wait" style="position: fixed; left: 49%; top: 42%; margin-left: -32px; /* -1 * image width / 2 */ margin-top: -32px;  /* -1 * image height / 2 */display: block;  "><img src="/images/loading.gif"/></div>');
+          $("html").append('<div id="wait" style="position: fixed; left: 49%; top: 42%; margin-left: -32px; /* -1 * image width / 2 */ margin-top: -32px;  /* -1 * image height / 2 */display: block;  "><img src="./images/loading.gif"/></div>');
         });
 
         $(window).load(function(){
@@ -20,9 +20,9 @@
         });
       });
     </script>
-    <link rel="stylesheet" href="../bower_components/fullpage/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./bower_components/fullpage/jquery.fullPage.css" />
     <link rel="stylesheet" href="styles/main.css">
-    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="./bower_components/modernizr/modernizr.js"></script>
     <script src="//use.typekit.net/pyi1cyg.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <!-- endbuild -->
@@ -34,7 +34,6 @@
       <ul class="right">
         <span id="menu-title">Menu</span>
         <li><a href="#home"><span>Home</span></a></li>
-        <li><a href="#teaser"><span>Teaser</span></a></li>
         <li><a href="#concept"><span>Concept</span></a></li>
         <li><a href="#demo"><span>Démo</span></a></li>
         <li><a href="#teamPage"><span>Crédits</span></a></li>
@@ -54,7 +53,7 @@
       <div class="section one">
         <div class="container">
           <div id="logo-section">
-            <img src="/images/sectionOne/logo.jpg" alt="Nooke" />
+            <img src="./images/sectionOne/logo.jpg" alt="Nooke" />
             <p>NOOKE</p>
           </div> 
 
@@ -83,7 +82,9 @@
         <div class="container">
           <div class="container-x">
             <div class="row-left left">
-              <!-- VIDEO -->
+              <video width="285" height="380">
+                <source src="./video/video-1.mp4" type="video/mp4" />
+              </video>
             </div>
 
             <div class="row-right right">
@@ -130,7 +131,9 @@
               <span id="big-circle"></span>
               <span id="little-circle"></span>
               <div id="ipad-section2">
-                 <!-- VIDEO -->
+                <video width="380" height="285">
+                  <source src="./video/video-2.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
 
@@ -161,6 +164,9 @@
               <span class="connection"></span>
               <span class="connection"></span>
               <span class="connection"></span>
+              <video width="285" height="380">
+                <source src="./video/video-3.mp4" type="video/mp4" />
+              </video>
             </div>
 
             <div class="row-right right">
@@ -269,7 +275,7 @@
         <div class="container">
           <div class="container-x">
             <h3>Démo</h3>
-            <img src="/images/sectionSeven/fake.jpg" alt="fake" />
+            <img src="./images/sectionSeven/fake.jpg" alt="fake" />
             
             <div id="btns-demos">
               <div class="btn-demo" id="desktop-demo">
@@ -292,7 +298,7 @@
         <div class="container">
           <div class="container-x">
             <div class="row-left left">
-              <img src="/images/sectionEight/outil.png" alt="Outil" />
+              <img src="./images/sectionEight/outil.png" alt="Outil" />
               
               <label for="mail">Restez informez de l’avancer du projet !</label>
               <input type="text" name="mail" />
@@ -315,7 +321,7 @@
             <div class="row-left">
               <h4>Clémence Taillez</h4>
               <p>Conception, Direction artistique</p>
-              <a href="http://www.gobelins.fr/" target="_blank"><img src="/images/sectionNine/gobelins.png" alt="Gobelins" /></a>
+              <a href="http://www.gobelins.fr/" target="_blank"><img src="./images/sectionNine/gobelins.png" alt="Gobelins" /></a>
             </div>
 
             <div class="row-right">
@@ -323,14 +329,14 @@
               <p>Conception, Développement</p>
               <a href="http://www.gobelins.fr/" target="_blank">
                 <p>Une école de</p>
-                <img src="/images/sectionNine/cci.jpg" alt="CCI de Paris" />
+                <img src="./images/sectionNine/cci.jpg" alt="CCI de Paris" />
               </a>
             </div>
             
             <h3>Merci à</h3>
             <div id="contain-thanks">
               <p id="thanks">Thierry Audoux, Véronique Ficara, Catherine Nyeki, Thomas Menia, Julien Demezois, <br/>Clément Rucheton, Benoît Widemann et Jonathan Blanchet. <br/><br/>Ce projet a été réalisé en partenariat avec la société Editis </p>
-              <a id="editis" href="http://www.editis.com/" target="_blank"><img src="/images/sectionNine/editis.jpg" alt="Editis" /></a>
+              <a id="editis" href="http://www.editis.com/" target="_blank"><img src="./images/sectionNine/editis.jpg" alt="Editis" /></a>
             </div>
             <span id="bg_bottom"></span>
           </div>
@@ -340,10 +346,10 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/fullpage/jquery.fullPage.js"></script>
-    <script src="../bower_components/fullpage/vendors/jquery.easings.min.js"></script>
-    <script src="../bower_components/fullpage/vendors/jquery.slimscroll.min.js"></script>
-    <script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="./bower_components/fullpage/jquery.fullPage.js"></script>
+    <script src="./bower_components/fullpage/vendors/jquery.easings.min.js"></script>
+    <script src="./bower_components/fullpage/vendors/jquery.slimscroll.min.js"></script>
+    <script src="./bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

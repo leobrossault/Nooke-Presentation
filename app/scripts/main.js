@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
     /* VAR */
     var wDevice = window.innerWidth;
@@ -12,13 +14,18 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
     	navigation: true,
     	navigationPosition: 'right',
-        anchors: ['home', 'teaser', 'concept', 'fourthPage', 'fivePage', 'sixPage', 'demo', 'eightPage', 'teamPage'],
+        anchors: ['home', 'concept', 'thirdPage', 'fourthPage', 'fivePage', 'sixPage', 'demo', 'eightPage', 'teamPage'],
         onLeave: function(index, nextIndex, direction){
             var xContainLeft = $(".section:nth-child("+nextIndex+") .container-x").width();
             var rowLeft = $(".section:nth-child("+nextIndex+") .row-left");
             var rowRight = $(".section:nth-child("+nextIndex+") .row-right");
+            var video = $(".section:nth-child("+nextIndex+") video");
             var rowLeftAnim = new TimelineMax();
             var rowRightAnim = new TimelineMax();
+
+            if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4) {
+                video.get(0).play();
+            }
 
             if (nextIndex != 9) {
                 rowLeftAnim.fromTo(rowLeft, 1, {x: -500, alpha: 0}, {x: 0, alpha: 1, ease: Power4.easeInOut}, 0.2);

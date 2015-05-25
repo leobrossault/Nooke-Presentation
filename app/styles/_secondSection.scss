@@ -6,9 +6,15 @@
 	background: -ms-linear-gradient(left,  #e69e95 0%,#e0686f 100%); /* IE10+ */
 	background: linear-gradient(to right,  #e69e95 0%,#e0686f 100%); /* W3C */
 
+	video {
+		position: absolute;
+		top: 4.9rem;
+		left: 10.35rem;
+	}
+
 	.cloud-section-one {
 		position: absolute;
-		background: url(#{$path}/sectionTwo/sprite_cloud.png) no-repeat;
+		background: url(#{$path}sectionTwo/sprite_cloud.png) no-repeat;
 		z-index: 1;
 
 		&#first-one {
@@ -52,14 +58,14 @@
 		padding: 0 7%;
 
 		.bg-section {
-			background: url(#{$path}/sectionTwo/bg_parallax.png) no-repeat center center;
+			background: url(#{$path}sectionTwo/bg_parallax.png) no-repeat center center;
 		}
 	}
 
 	.row-left {
 		width: 49.2rem;
 		height: 48.3rem;
-		background: url(#{$path}/sectionTwo/iPad.png) no-repeat center top;
+		background: url(#{$path}sectionTwo/iPad.png) no-repeat center top;
 	}
 
 	.row-right {

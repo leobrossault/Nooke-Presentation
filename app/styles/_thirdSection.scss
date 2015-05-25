@@ -7,13 +7,19 @@
 	background: -ms-linear-gradient(left,  #eeedf3 0%,#c5cfe3 100%); /* IE10+ */
 	background: linear-gradient(to right,  #eeedf3 0%,#c5cfe3 100%); /* W3C */
 
+	video {
+		position: absolute;
+		left: 12.15rem;
+		top: 1.72rem;
+	}
+
 	.fp-tableCell {
 		padding: 0 2%;
 	}
 
 	.cloud-section-two {
 		position: absolute;
-		background: url(#{$path}/sectionThird/sprite_cloud.png) no-repeat;
+		background: url(#{$path}sectionThird/sprite_cloud.png) no-repeat;
 		z-index: 1;
 
 		&#first-two {
@@ -84,7 +90,7 @@
 			z-index: 999;
 			width: 62.6rem;
 			height: 32.3rem;
-			background: url(#{$path}/sectionThird/iPad.png) no-repeat center top;			
+			background: url(#{$path}sectionThird/iPad.png) no-repeat center top;			
 		}
 	}
 
