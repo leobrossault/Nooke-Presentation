@@ -94,7 +94,7 @@
   				animation: connection 3s 0.5s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
 			}
 
-			&:last-child {
+			&:first-child + span + span {
 				background-position: -64px -291px;
 				width: 1.5em;
 				height: 5.6em;
