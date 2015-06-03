@@ -24,7 +24,9 @@ $(document).ready(function() {
             var rowRightAnim = new TimelineMax();
 
             if (nextIndex == 2 || nextIndex == 3 || nextIndex == 4 || nextIndex == 5 || nextIndex == 6) {
-                video.get(0).play();
+                if (wDevice >= 1150) {
+                    video.get(0).play();
+                }                
             }
 
             if (nextIndex != 9) {
@@ -66,9 +68,11 @@ $(document).ready(function() {
         var burger = $('#burger');
         var hLink = (hDevice - 59) / 5;
         var link = $('#menu ul a');
+        var video = $('video');
 
         menu.height(hDevice);
         link.height(hLink);
+        video.remove();
 
         burger.click(function () {
             if (menu.hasClass('active')) {
@@ -79,6 +83,8 @@ $(document).ready(function() {
                 $(this).addClass('active');
             }
         }); 
+
+
     }
 
     /* POPUP */

@@ -66,6 +66,13 @@
 		width: 29.8rem;
 		height: 44.3rem;
 		background: url(#{$path}sectionEight/iPad.png) no-repeat;
+
+		img {
+			width: 270px;
+		  	position: absolute;
+		  	top: 42px;
+		  	left: 14px;
+		}
 	}
 }
 

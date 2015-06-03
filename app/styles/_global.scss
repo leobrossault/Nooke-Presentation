@@ -243,6 +243,13 @@ h3::before {
 	}
 }
 
+@media screen and (max-width: 880px) {
+	body #overlay-teaser > div #popup-teaser {
+		width: 100%;
+		height: 80%;
+	}
+}
+
 @media screen and (max-width: 680px) {
 	.fp-tableCell .container .section-title span:first-child {
 		font-size: 2rem;
@@ -256,9 +263,73 @@ h3::before {
 		font-size: 2.4rem;
 	}
 
+	.fp-tableCell .container .section-button-onde {
+		width: 7.8rem;
+		top: 0.6rem;
+  		left: 0.6rem;
+	}
+
+	.fp-tableCell .container .section-button-onde .back-onde {
+		width: 8.2rem;
+		height: 8.2rem;
+	}
+
 	.row-right,
 	.row-left {
 		float: none !important;
+	}
+	
+	.nine h3 {
+	  margin: 0.5rem 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.one .fp-tableCell .container #baseline {
+		margin: 0;
+		font-size: 1.5rem;
+	}
+
+	.one .fp-tableCell .container #baseline + a {
+		font-size: 1.5rem;
+		height: 2.8rem;
+	}
+
+	.one .fp-tableCell .container #logo-section {
+		margin-bottom: 0.5rem;
+	}
+
+	.fp-tableCell .container .section-button-onde {
+		display: none;
+	}
+
+	.four .container .row-right .section-text {
+		margin-top: 0;
+	}
+
+	.seven .container .container-x h3::before, 
+	.seven .container .container-x h3::after {
+		width: 30%;
+	}
+
+	.seven .container .container-x {
+		width: 80%;
+	}
+
+	.eight .container .row-left {
+		width: 85%;
+	}
+
+	.eight .container .row-left label {
+		margin-top: 1rem;
+	}
+
+	.nine .container .row-right ~ * {
+		display: none;
+	}
+
+	body #fp-nav.right {
+		right: 0;
 	}
 }
 
